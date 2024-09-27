@@ -544,7 +544,7 @@ nav li img {
 nav li:hover {
 	background: linear-gradient(233.07deg, #ff4bd1 25.16%, #bb4ed8 90.03%);
 }
-li:hover::before {
+nav li:hover::before {
 	content: url('../img/poligon.svg');
 	width: 28px;
 	height: 21px;
@@ -553,7 +553,7 @@ li:hover::before {
 	margin-left: 54px;
 	margin-top: -3px;
 }
-li:hover::after {
+nav li:hover::after {
 	content: '';
 	font-family: 'Montserrat';
 	font-size: 17px;
@@ -624,9 +624,9 @@ li#faq:hover::after {
 }
 li#comment:hover::after {
 	content: 'Vestibulum auctor libero massa';
-	width: 333px;
+	width: 350px;
 	margin-top: -40px;
-	margin-left: 75px;
+	margin-left: 74px;
 }
 
 .name {
