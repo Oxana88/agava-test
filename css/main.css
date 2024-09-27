@@ -512,6 +512,11 @@ svg path {
 	width: 48px;
 	height: 48px;
 }
+.scroll {
+	margin-top: 350px;
+	margin-left: 80px;
+	position: fixed;
+}
 nav {
 	position: absolute;
 	margin-top: 20px;
