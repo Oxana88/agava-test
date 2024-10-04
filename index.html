@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta
 			name="viewport"
 			content=""
 			width="device-width,"
 			initial-scale="1.0"
-		/>
+		/> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -30,30 +31,40 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="logo"><img src="img/logo.svg" /></div>
-			<div class="logo-text">
-				<span
-					style="
-						display: block;
-						font-size: 13pt;
-						font-weight: 500;
-						color: #eb6c97;
-					"
-					>KALINA</span
-				><span
-					style="display: block; color: #fff; font-weight: 400; font-size: 13pt"
-					>CASINO</span
-				><span
-					style="
-						display: block;
-						color: #fff;
-						font-weight: 300;
-						font-size: 8pt;
-						opacity: 40%;
-						margin-top: -2.5px;
-					"
-					>REVIEW</span
-				>
+			<div class="top-menu" id="top-menu">
+				<img src="img/top-menu.svg" />
+			</div>
+			<div class="logo">
+				<div class="logo-img"><img src="img/logo.svg" /></div>
+				<div class="logo-text">
+					<span
+						style="
+							display: block;
+							font-size: 13pt;
+							font-weight: 500;
+							color: #eb6c97;
+						"
+						>KALINA</span
+					><span
+						style="
+							display: block;
+							color: #fff;
+							font-weight: 400;
+							font-size: 13pt;
+						"
+						>CASINO</span
+					><span
+						style="
+							display: block;
+							color: #fff;
+							font-weight: 300;
+							font-size: 8pt;
+							opacity: 40%;
+							margin-top: -2.5px;
+						"
+						>REVIEW</span
+					>
+				</div>
 			</div>
 		</header>
 		<nav>
@@ -76,37 +87,13 @@
 				<li id="comment"><img src="img/comment.svg" /></li>
 			</ul>
 			<div class="scroll">
-				<img src="img/scroll.svg" width="62px" height="62px" />
 			</div>
 		</nav>
-
 		<main>
 			<div class="banner">
 				<h5>Aliquam consectetur</h5>
-				<h6
-					style="
-						width: 826px;
-						background: 0 0;
-						text-shadow: 0 5px 3px #00000040;
-						z-index: 10;
-						top: 90px;
-					"
-				>
-					Quisque luctus varius massa
-				</h6>
-				<h6
-					style="
-						width: 826px;
-						background: linear-gradient(0deg, #ffdf8e 20%, #ffc700 50%);
-						-webkit-text-fill-color: transparent;
-						-webkit-background-clip: text;
-						display: table;
-						z-index: 50;
-						top: 90px;
-					"
-				>
-					Quisque luctus varius massa
-				</h6>
+				<h6 class="shadow">Quisque luctus varius massa</h6>
+				<h6 class="gradient">Quisque luctus varius massa</h6>
 				<button><span>solosidi sem</span></button>
 				<div><img src="img/logo.svg" class="small-berry" /></div>
 				<div><img src="img/logo.svg" class="big-berry" /></div>
@@ -162,26 +149,29 @@
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/198f2b32d36be9ba1e1b76027668563e.webp);
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/1f7a285bd1cdd60bf762527309a5b20c.webp);
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/57d80a6bd4130af25fea0f844ef94f55.webp);
 					"
 				></div>
 			</div>
+			<div class="gallery-nav">
+				<div class="scroll"></div>
+			</div>
 			<h1>Aenean lacus mi efficitur in venenatis</h1>
-			<h3>Venenatis:</h3>
+			<h3 class="hide">Venenatis:</h3>
 			<ul>
 				<li>
 					Quisque luctus varius massa, in gravida arcu condimentum in. Vivamus
@@ -220,23 +210,26 @@
 			</ul>
 			<div class="gallery-big">
 				<div
-					class="gallery-big-pic"
+					class="pic"
 					style="
 						background-image: url(img/c8fe1b55b7cc4c9cb7fbeb94311703c6.webp);
 					"
 				></div>
 				<div
-					class="gallery-big-pic"
+					class="pic"
 					style="
 						background-image: url(img/9b99a1515711321521263add7abf4cf3.webp);
 					"
 				></div>
 				<div
-					class="gallery-big-pic"
+					class="pic hide"
 					style="
 						background-image: url(img/63cb088a80feba25aa38f27ae20d190f.webp);
 					"
 				></div>
+			</div>
+			<div class="gallery-nav">
+				<div class="scroll"></div>
 			</div>
 			<h1>Mauris ultricies ante sit amet ex imperdiet efficitur</h1>
 			<p>
@@ -279,39 +272,19 @@
 					neque, aliquam cursus turpis!
 				</li>
 			</ul>
-			<div class="banner" style="margin-top: 70px">
-				<h6
-					style="
-						width: 826px;
-						background: 0 0;
-						text-shadow: 0 5px 3px #00000040;
-						z-index: 10;
-						top: 3240px;
-					"
-				>
-					Sed at ex eu velit faucibus
-				</h6>
-				<h6
-					style="
-						width: 826px;
-						background: linear-gradient(0deg, #ffdf8e 20%, #ffc700 50%);
-						-webkit-text-fill-color: transparent;
-						-webkit-background-clip: text;
-						display: table;
-						z-index: 50;
-						top: 3240px;
-					"
-				>
-					Sed at ex eu velit faucibus
-				</h6>
-				<h5 style="margin-top: 55px; font-size: 32px">
-					Nullam pulvinar suscipit est, vel vulputate
-				</h5>
-				<button style="margin-top: 20px"><span>solosidi sem</span></button
+			<div class="banner second-banner">
+				<h6 class="shadow">Sed at ex eu velit faucibus</h6>
+				<h6 class="gradient">Sed at ex eu velit faucibus</h6>
+				<h5 class="h5">Nullam pulvinar suscipit est, vel vulputate</h5>
+				<button><span>solosidi sem</span></button
 				><img
 					src="img/1717171215213_challenges-1280.webp"
-					style="position: absolute; top: 3148px; left: 690px"
+					style="position: absolute;     top: 3242px;
+    left: 670px;"
+					class="hide"
 				/>
+				<div class="blue-coin"></div>
+				<div class="green-coin"></div>
 			</div>
 			<h1>Donec mi ex efficitur fringilla laoreet eget</h1>
 			<p>
@@ -388,23 +361,26 @@
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/198f2b32d36be9ba1e1b76027668563e.webp);
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/1f7a285bd1cdd60bf762527309a5b20c.webp);
 					"
 				></div>
 				<div
-					class="pic"
+					class="pic hide"
 					style="
 						background-image: url(img/57d80a6bd4130af25fea0f844ef94f55.webp);
 					"
 				></div>
+			</div>
+			<div class="gallery-nav">
+				<div class="scroll"></div>
 			</div>
 			<h1>Vestibulum vitae enim tellus</h1>
 			<p>
@@ -427,25 +403,25 @@
 			</ul>
 			<div class="gallery-narrow">
 				<div
-					class="gallery-narrow-pic"
+					class="pic"
 					style="
 						background-image: url(img/af05e8c0402e4437c9f95f271f681b23.webp);
 					"
 				></div>
 				<div
-					class="gallery-narrow-pic"
+					class="pic"
 					style="
 						background-image: url(img/056eafa8bb82e2e3b24136f18e20937a.webp);
 					"
 				></div>
 				<div
-					class="gallery-narrow-pic"
+					class="pic"
 					style="
 						background-image: url(img/f7f1a7202c04deb915ed6bc4f5bca70d.webp);
 					"
 				></div>
 				<div
-					class="gallery-narrow-pic"
+					class="pic hide"
 					style="
 						background-image: url(img/c69472680ea2131d4dc4c7917a1d8675.webp);
 					"
@@ -476,53 +452,31 @@
 					eros dignissim sed.
 				</li>
 			</ul>
-			<div
-				class="banner"
-				style="margin-top: 70px; padding: 50px; margin-bottom: 50px"
-			>
-				<h6
-					style="
-						width: 375px;
-						line-height: 67px;
-						margin-top: -30px;
-						background: 0 0;
-						text-shadow: 3px 6px 4px #00000040;
-						z-index: 10;
-					"
-				>
-					Maecenas ex diameget eget
-				</h6>
-				<h6
-					style="
-						width: 375px;
-						line-height: 67px;
-						margin-top: -30px;
-						background: linear-gradient(0deg, #ffdf8e 20%, #ffc700 50%);
-						-webkit-text-fill-color: transparent;
-						-webkit-background-clip: text;
-						display: table;
-						z-index: 50;
-					"
-				>
-					Maecenas ex diameget eget
-				</h6>
-				<button style="margin-top: 120px"><span>solosidi sem</span></button
+			<div class="banner third-banner">
+				<h6 class="shadow">Maecenas ex diameget eget</h6>
+				<h6 class="gradient">Maecenas ex diameget eget</h6>
+				<button><span>solosidi sem</span></button
 				><img
+					class="hide"
 					src="img/1717421432811_shop-1920.webp"
 					style="position: absolute; left: 360px; top: 5470px"
 				/>
+				<div class="third-banner-pic1"></div>
+				<div class="third-banner-pic2"></div>
+			
 			</div>
 			<div>
-				<h1 class="star">Mauris in metus luctus</h1>
-				<p style="margin-top: -10px">*Nulla in ultricies lorem</p>
+				<h1 class="full-star">Mauris in metus luctus</h1>
+				<p style="margin-top: -10px; text-transform: uppercase">
+					*Nulla in ultricies lorem
+				</p>
 			</div>
 			<div class="nunc-wrap"><div class="nunc-but">Nunc</div></div>
+			<!-- отзывы -->
 			<div class="feedback">
 				<div style="display: flex; justify-content: space-between">
 					<div class="user">cristopher007</div>
-					<div class="feedback-star">
-						<img src="img/empty-star.svg" width="40.21px" height="38.66px" />
-					</div>
+					<div class="feedback-star4"></div>
 				</div>
 				<p>
 					Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a
@@ -530,28 +484,15 @@
 					euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus.
 					Sed sodales suscipit congue. Aenean ultrices non elit et eleifend.
 				</p>
-				<div
-					style="
-						display: flex;
-						justify-content: right;
-						height: 25px;
-						margin-top: 20px;
-					"
-				>
-					<div class="like">
-						<img src="img/icon-like.svg" width="25px" height="25px" />
-					</div>
-					<div class="mess">
-						<img src="img/icon-mes.svg" width="25px" height="25px" />
-					</div>
+				<div class="like-wrapper">
+					<div class="like"></div>
+					<div class="mess"></div>
 				</div>
 			</div>
 			<div class="feedback">
 				<div style="display: flex; justify-content: space-between">
 					<div class="user">cristopher007</div>
-					<div class="feedback-star">
-						<img src="img/semi-star.svg" width="40.21px" height="38.66px" />
-					</div>
+					<div class="feedback-star4"></div>
 				</div>
 				<p>
 					Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a
@@ -559,28 +500,15 @@
 					euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus.
 					Sed sodales suscipit congue. Aenean ultrices non elit et eleifend.
 				</p>
-				<div
-					style="
-						display: flex;
-						justify-content: right;
-						height: 25px;
-						margin-top: 20px;
-					"
-				>
-					<div class="like">
-						<img src="img/icon-like.svg" width="25px" height="25px" />
-					</div>
-					<div class="mess">
-						<img src="img/icon-mes.svg" width="25px" height="25px" />
-					</div>
+				<div class="like-wrapper">
+					<div class="like"></div>
+					<div class="mess"></div>
 				</div>
 			</div>
-			<div class="feedback">
+			<div class="feedback hide">
 				<div style="display: flex; justify-content: space-between">
 					<div class="user">cristopher007</div>
-					<div class="feedback-star">
-						<img src="img/star.svg" width="40.21px" height="38.66px" />
-					</div>
+					<div class="feedback-star4"></div>
 				</div>
 				<p>
 					Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a
@@ -588,40 +516,33 @@
 					euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus.
 					Sed sodales suscipit congue. Aenean ultrices non elit et eleifend.
 				</p>
-				<div
-					style="
-						display: flex;
-						justify-content: right;
-						height: 25px;
-						margin-top: 20px;
-					"
-				>
-					<div class="like">
-						<img src="img/icon-like.svg" width="25px" height="25px" />
-					</div>
-					<div class="mess">
-						<img src="img/icon-mes.svg" width="25px" height="25px" />
-					</div>
+				<div class="like-wrapper"></div>
+					<div class="like"></div>
+					<div class="mess"></div>
 				</div>
 			</div>
 			<div class="nest-feedback">
-				<div class="user">cristopher007</div>
-				<p style="margin-top: 50px">
+				<div style="display: flex; justify-content: space-between">
+					<div class="user">cristopher007</div>
+				
+				</div>
+				<p>
 					Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a
 					malesuada nisi, sed facilisis velit. Proin blandit facilisis purus,
 					euismod feugiat odio. Phasellus interdum ultrices felis vitae finibus.
 					Sed sodales suscipit congue. Aenean ultrices non elit et eleifend.
 				</p>
+			
 			</div>
-			<form action="" class="feedback-form">
-				<div class="wrapper" style="margin-bottom: 25px">
+			<form action="" class="feedback-form nest">
+				<div class="wrapper margins">
 					<div class="label">Hinterlassen Sie eine Bewertung</div>
-					<div class="form-star"></div>
+					<div class="feedback-star4"></div>
 				</div>
 				<div class="wrapper">
 					<div>
-						<input type="" class="name" placeholder="Ihr Name*" />
-						<div type="" class="check">
+						<input type="text" class="name" placeholder="Ihr Name*" />
+						<div type="text" class="check">
 							<input
 								type="checkbox"
 								class="custom-checkbox"
@@ -639,9 +560,7 @@
 			<div class="feedback-cut">
 				<div style="display: flex; justify-content: space-between">
 					<div class="user">cristopher007</div>
-					<div class="feedback-star">
-						<img src="img/empty-star.svg" width="40.21px" height="38.66px" />
-					</div>
+					<div class="feedback-star4"></div>
 				</div>
 				<p>
 					Aenean pharetra sodales nunc, ac tincidunt metus tempus vel. Vivamus a
@@ -651,14 +570,14 @@
 				</p>
 				<div class="feedback-more">more</div>
 			</div>
-			<form action="" class="feedback-form" style="width: 100%">
-				<div class="wrapper" style="margin-bottom: 25px">
+			<form action="" class="feedback-form">
+				<div class="wrapper margins">
 					<div class="label">Hinterlassen Sie eine Bewertung</div>
-					<div class="form-star"></div>
+					<div class="feedback-star4"></div>
 				</div>
 				<div class="wrapper">
 					<div>
-						<input type="" class="name" placeholder="Ihr Name*" />
+						<input type="text" class="name" placeholder="Ihr Name*" />
 						<div type="" class="check">
 							<input
 								type="checkbox"
@@ -672,7 +591,7 @@
 						<button>Feedback senden</button>
 					</div>
 					<div>
-						<input type="text" class="message" style="width: 1038.85px" />
+						<input type="text" class="message" />
 					</div>
 				</div>
 			</form>
@@ -699,23 +618,26 @@
 			</p>
 			<div class="gallery-big">
 				<div
-					class="gallery-big-pic"
+					class="pic"
 					style="
 						background-image: url(img/9f871cd750f95ce09197f9801c4b93b0.webp);
 					"
 				></div>
 				<div
-					class="gallery-big-pic"
+					class="pic"
 					style="
 						background-image: url(img/cf752091f8961f79a48900e42712d769.webp);
 					"
 				></div>
 				<div
-					class="gallery-big-pic"
+					class="pic hide"
 					style="
 						background-image: url(img/273f21ca70ba5af24e01d0ca40a56429.webp);
 					"
 				></div>
+			</div>
+			<div class="gallery-nav">
+				<div class="scroll"></div>
 			</div>
 			<h1>Vestibulum auctor libero massa</h1>
 			<p>
@@ -735,7 +657,28 @@
 			</p>
 		</main>
 		<footer loading="lazy">
-			<div class="wrapper">
+			<div class="footer-nav wrapper"><div>lorem ipsum</div><div><img src="img/footer-arrow.webp" alt="lorem ipsum"></div>
+			</div>
+			<div class="footer-nav wrapper"><div>interdum</div><div><img src="img/footer-arrow.webp" alt="interdum"></div>
+		</div>
+		<div class="footer-nav wrapper"><div>cras porta</div><div><img src="img/footer-arrow.webp" alt="cras porta"></div>
+	</div>
+	<div class="footer-nav wrapper"><div>dius semper</div><div><img src="img/footer-arrow.webp" alt="dius semper"></div>
+</div>
+<div class="footer-nav wrapper"><div>Cras dignissim</div><div><img src="img/footer-arrow.webp" alt="Cras dignissim"></div>
+</div>
+<div class="footer-nav wrapper"><div>Lorem ipsum dolor</div><div><img src="img/footer-arrow.webp" alt="Lorem ipsum dolor"></div>
+</div>
+<div class="footer-nav wrapper"><div>Duis minar </div><div><img src="img/footer-arrow.webp" alt="Duis minar "></div>
+</div>
+<div class="footer-nav wrapper"><div>Donec nunc </div><div><img src="img/footer-arrow.webp" alt="Donec nunc "></div>
+</div>
+<div class="footer-nav wrapper"><div>Nulla facilisi</div><div><img src="img/footer-arrow.webp" alt="Nulla facilisi"></div>
+</div>
+<div class="footer-nav wrapper"><div>Vivamus ornare</div><div><img src="img/footer-arrow.webp" alt="Vivamus ornare"></div>
+</div>
+	
+			<div class="wrapper hide">
 				<div>
 					<ul>
 						<li>Lorem Ipsum</li>
@@ -815,20 +758,7 @@
 						<li>Auctor</li>
 					</ul>
 				</div>
-				<div>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
+				
 			</div>
 			<div class="wrapper mark">
 				<div><img src="img/footer-logo1.webp" /></div>
