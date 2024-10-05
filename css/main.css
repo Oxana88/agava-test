@@ -6,7 +6,11 @@ body,
 main {
 	overflow-x: hidden;
 }
-*,
+
+* {
+	box-sizing: border-box;
+}
+
 *::before,
 *::after {
 	box-sizing: inherit;
@@ -159,6 +163,13 @@ main {
 	justify-content: space-between;
 	margin-top: 21px;
 	margin-bottom: 21px;
+
+	ol {
+		display: flex;
+	}
+	li {
+		list-style-type: none;
+	}
 }
 
 .pic {
@@ -938,7 +949,55 @@ footer {
 	border-bottom: solid 1px #6d1185;
 	display: none;
 }
+/* карусель старт */
+carousel-media {
+	/* Arrange media horizontally */
+	display: flex;
+}
+.carousel-scroll-container {
+	display: none;
+	/* Enable horizontal scrolling */
+	overflow-x: auto;
+	/* overflow-x: hidden; */
+	/* Enable horizontal scroll snap */
+	scroll-snap-type: x proximity;
+	/* Smoothly snap from one focal point to another */
+	scroll-behavior: smooth;
+	overflow-y: hidden;
+}
+.carousel-item {
+	/* Limit the height of each media item */
+	/* height: 248px; */
+	/* Prevent media from shrinking */
+	flex-shrink: 0;
+	/* The focal point for each item is the center */
+	scroll-snap-align: center;
+}
+.carousel-item:first-of-type {
+	/* Allow users to fully scroll to the start */
+	scroll-snap-align: start;
+}
+.carousel-item:last-of-type {
+	/* Allow users to fully scroll to the end */
+	scroll-snap-align: end;
+}
+/* Target direct descendant too in case the images have a wrapper parent */
+/* .carousel-item > *,
+.carousel-item :is(div, picture, figure, img) {
+	height: 248px;
+} */
+.carousel-item div {
+	/* Remove line height (typically done in a CSS reset) */
+	display: block;
+	/* Responsive width based on aspect ratio */
+	/* width: 380px; */
+}
+
+/* карусель финиш */
 @media (max-width: 834px) {
+	.carousel-scroll-container {
+		display: block;
+	}
 	html {
 		width: 834px;
 	}
@@ -1093,7 +1152,7 @@ footer {
 
 	.gallery-big {
 		margin-bottom: 20px;
-		height: 248px;
+		height: 270px;
 		.pic {
 			width: 380px;
 			height: 248px;
