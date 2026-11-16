@@ -13,7 +13,7 @@ This repository contains a responsive webpage implementation based on a design m
 ## Deliverables
 
 - `index.html` — page structure and content
-- `style.css` — styling and responsive layout
+- `main.css` — styling and responsive layout
 
 ## Outcome
 
