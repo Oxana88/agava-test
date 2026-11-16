@@ -1,20 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
- .chat:after {
-	content: '';
-	position: absolute;
-	background: url(../img/poligon.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	display: inline-block;
-	background-image: url(../img/full-star-tablet-30.svg);
-	width: calc(var(--body-width)/64);
-	height: calc(var(--body-width)/64);
-	margin-top: calc(var(--body-width)/71.1);
-	margin-left: calc(var(--body-width)/96);
- }
 .full-star {
 	display: inline-block;
 	background-image: url(../img/full-star-tablet-30.svg);
@@ -43,6 +29,23 @@ html {
 	background-image: url('../img/empty-star-tablet-23.svg');
 	margin-top: -28px;
 } */
+ div:has(h1.chat){
+	display:flex
+ }
+ .chat:after {
+	display: block;
+	content: "*Nulla in ultricies lorem";
+	margin-top: calc(var(--body-width)/-96);
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: calc(var(--body-width) * 125 / 10000);
+	font-weight: 400;
+	text-align: left;
+	padding: 0;
+}
+.group-star {
+	margin: calc(var(--body-width)/64);
+}
 @media (max-width: 3840px) {
 	:root {
 		--body-width: 3840px;
@@ -403,26 +406,20 @@ html {
 			height: calc(var(--body-width) * 1813 / 10000);
 		}
 	}
-	.youtube {
-		/* width: 1643px; */
+	div:has(.youtube) {
+		margin-top:calc(var(--body-width)/48);
+		position: relative;
 		width: 100%;
-		/* height: 924px; */
-		height: calc(var(--body-width) * 4813 / 10000);
-		padding-left: 45%;
-		padding-top: 27%;
-		border: solid calc(var(--body-width) * 521 / 100000) #000;
-		/* border: solid 10px #000; */
-		/* margin-top: 30px; */
-		margin-top: calc(var(--body-width) * 1563 / 100000);
-		.youtube-text {
-			text-transform: uppercase;
-			font-size: calc(var(--body-width) * 2083 / 100000);
-			/* font-size: 40px; */
-			font-weight: 700;
-			/* line-height: 59.28px; */
-			line-height: calc(var(--body-width) * 3088 / 100000);
-			text-align: left;
-		}
+		height: 0;
+		padding-bottom: 56.25%; /* Пропорции 16:9 */
+	}
+	.youtube {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
 	}
 	h5 {
 		padding: 0;
@@ -1258,10 +1255,6 @@ html {
 		/* width: 380px; */
 	}
 	/* карусель финиш */
-	.feedb {
-		margin-top: calc(var(--body-width) * -521 / 100000);
-		text-transform: uppercase;
-	}
 } /*3840*/
 
 @media(max-width:3360px){
@@ -2454,10 +2447,10 @@ html {
 	input {
 		margin: calc(var(--body-width) * 267 / 10000) 0;
 	}
-	.feedb {
+	/* .feedb {
 		font-size: calc(var(--body-width) * 373 / 10000);
 		margin-top: calc(var(--body-width) * 2133 / 100000);
-	}
+	} */
 	.nunc-wrap {
 		margin-top: calc(var(--body-width) * 533 / 10000);
 	}
@@ -2496,12 +2489,6 @@ html {
 .empty-star {
 	width: calc(var(--body-width) / 30);
 	height: calc(var(--body-width) / 30);
-}
-.chat:after {
-	width: calc(var(--body-width) / 30);
-	height: calc(var(--body-width) / 30);
-	margin-top: calc(var(--body-width) / 25);
-	margin-left: calc(var(--body-width) / 60);
 }
 	.feedback {
 		border-radius: calc(var(--body-width) * 8 / 100);
