@@ -1611,19 +1611,6 @@ html {
 		left: calc(var(--body-width) * 65947 / 100000);
 		top: calc(var(--body-width) * 20384 / 100000);
 	}
-	.youtube {
-		border: solid calc(var(--body-width) * 5995 / 1000000) #000;
-		height: calc(var(--body-width) * 52638 / 100000);
-		margin-bottom: calc(var(--body-width) * 4556 / 100000);
-		/* border: solid 5px #000;
-		height: 439px;
-		margin-bottom: 38px; */
-		padding-left: 40%;
-		padding-top: 25%;
-		.youtube-text {
-			font-size: calc(var(--body-width) * 3597 / 100000);
-		}
-	}
 	.hide {
 		display: none;
 	}
@@ -2300,17 +2287,6 @@ html {
 	li {
 		font-size: calc(var(--body-width) * 4 / 100);
 		line-height: calc(var(--body-width) * 553 / 10000);
-	}
-	.youtube {
-		padding-top: 23%;
-		margin-top: calc(var(--body-width) * 8 / 100);
-		width: calc(var(--body-width) * 92 / 100);
-		height: calc(var(--body-width) * 52 / 100);
-		border: solid 3px #000;
-		font-size: calc(var(--body-width) * 4 / 100);
-		.youtube-text {
-			font-size: calc(var(--body-width) * 4 / 100);
-		}
 	}
 	.gallery {
 		width: calc(var(--body-width) * 9147 / 10000);
