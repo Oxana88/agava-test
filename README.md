@@ -18,5 +18,7 @@ This repository contains a responsive webpage implementation based on a design m
 ## Outcome
 
 The page was completed on schedule and in accordance with the assignment requirements. The supplied mockup was used as the visual reference for the implementation.
-https://oxana88.github.io/agava-test/
+
 ![task](test-task.png)
+
+https://oxana88.github.io/agava-test/
