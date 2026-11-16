@@ -21,4 +21,5 @@ The page was completed on schedule and in accordance with the assignment require
 
 ![task](test-task.png)
 
-https://oxana88.github.io/agava-test/
+
+<a href="https://oxana88.github.io/agava-test/" target="_blank" rel="noopener noreferrer">https://oxana88.github.io/agava-test/</a>
