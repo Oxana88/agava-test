@@ -8,7 +8,7 @@ This repository contains a responsive webpage implementation based on a design m
 
 - Recreate the supplied design as closely as possible.
 - Adapt the page layout for different screen sizes.
-- Deliver the implementation as two files: `index.html` and `style.css`.
+- Deliver the implementation as two files: `index.html` and `main.css`.
 
 ## Deliverables
 
